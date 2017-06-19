@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/amala_image"
+                android:layout_gravity="bottom"
+                android:id="@+id/idFoodImageView"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/idTextViewDescriptiion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="fill_horizontal"
+                    android:text="Amala"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="28dp"
+                    android:layout_above="@+id/idButtonAddToCart"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/idTextViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="@string/pricePlaceholder"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="73dp" />
+
+                <Button
+                    android:id="@+id/idButtonAddToCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/idTextViewPrice"
+                    android:layout_alignBottom="@+id/idTextViewPrice"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toEndOf="@+id/idTextViewPrice"
+                    android:background="@color/colorBlue"
+                    android:text="Add to cart"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

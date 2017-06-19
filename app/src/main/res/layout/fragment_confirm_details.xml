@@ -1,0 +1,160 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jp.food.ConfirmDetailsFragment">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idrecyclerViewConfirm"></android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.NestedScrollView>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:orientation="horizontal">
+      <TextView
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorBlue"
+          android:text="Total Bill:"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="price"
+      android:id="@+id/idTVbillPrice"
+      android:textColor="@color/colorBlack"
+      android:layout_marginLeft="5dp"/>
+  </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:textColor="@color/colorBlue"
+                    android:text="Delivery Address"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="address"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/idTVdeliveryAddress"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:textColor="@color/colorBlue"
+                    android:text="Nearest Bus stop"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="address"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/idTVBusStop"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/colorBlue"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="address"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/idTVphoneNum"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:text="Full name"
+                        android:textColor="@color/colorBlue"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="address"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/idTVfullName"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:text="Email"
+                    android:textColor="@color/colorBlue"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="address"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/idTVemail"
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/idbuttonProceede"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="Proceed to Payment"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorBlue"
+                android:layout_gravity="end"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
