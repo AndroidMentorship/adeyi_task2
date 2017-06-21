@@ -40,27 +40,24 @@ public class EnterDetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        View view = inflater.inflate(R.layout.fragment_enter_details, container, false);
-        ButterKnife.bind(this, view);
-        final String fullname = etFullName.getText().toString().trim();
-        final String email = eTEmail.getText().toString().trim();
-        final String address = eTaddress.getText().toString().trim();
-        final String phoneNum = eTphone.getText().toString().trim();
-        final String busStop = eTBusStop.getText().toString().trim();
-        String couponCode = eTcoupon.getText().toString().trim();
+         ButterKnife.bind(this, view);
+         getActivity().setTitle(getString(R.string.enter_details_frag_title));
         btnProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkForIrregularities();
+
                 if (isKeysFilled()){
                     FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                     ConfirmDetailsFragment confirmDetailsFragment = ConfirmDetailsFragment.newInstance(etFullName.getText().toString().trim(),
                             eTEmail.getText().toString().toString(),
                             eTphone.getText().toString().trim(),
                             eTBusStop.getText().toString().trim(),
-                            eTaddress.getText().toString().trim() );
+                            eTaddress.getText().toString().trim());
                     fragmentTransaction.replace(R.id.idcontainerframe,confirmDetailsFragment);
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
+                } else{
+                    setErrors();
                 }
             }
         });
@@ -70,30 +67,22 @@ public class EnterDetailsFragment extends Fragment {
 
         return view;
     }
-    public  void checkForIrregularities(){
+    public  void setErrors(){
         if (etFullName.getText().toString().trim().isEmpty()){
             etFullName.setError("Please Enter Full name");
-        } else {
-            etFullName.setError(null);
         }
 
         if(eTEmail.getText().toString().trim().isEmpty()){
             eTEmail.setError("Please enter an email address");
-        } else {
-            eTEmail.setError(null);
         }
 
         if (eTaddress.getText().toString().toString().isEmpty()){
             eTaddress.setError("Please enter your address");
-        } else {
-            eTaddress.setError(null);
         }
 
 
         if (eTphone.getText().toString().trim().isEmpty()){
-            eTphone.setText("Please enter your phone number");
-        } else {
-            eTphone.setError(null);
+            eTphone.setError("Please enter your phone number");
         }
 
 

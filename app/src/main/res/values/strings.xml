@@ -19,4 +19,25 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_proceed_from_cart">Proceed to complete order</string>
+    <string name="text_contiue_shopping">Continue Shopping</string>
+    <string name="btn_text_add_to_cart">add to cart</string>
+    <string name="price_text">Price:</string>
+    <string name="totalBill">Total Bill:</string>
+    <string name="delivery_Address">Delivery Address</string>
+    <string name="nearest_bus_stop">Nearest Bus Stop</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="hint_fullname">Enter your full name here</string>
+    <string name="hint_email">Enter Your email address here</string>
+    <string name="hint_delivery_address">Enter delivery address here</string>
+    <string name="hint_nearest_bustop">Enter the nearest bus stop to you here </string>
+    <string name="hint_phoneNumber">Enter your Phone number here</string>
+    <string name="text_coupon_code">Coupon code (optional)</string>
+    <string name="hint_coupon">Enter coupon code here</string>
+    <string name="cart_Title">Cart</string>
+    <string name="confirm_detail_frag_title">Confirm Details</string>
+    <string name="enter_details_frag_title">Enter shipping details</string>
+    <string name="main_activity_title">O\'s Kitchen</string>
 </resources>

@@ -28,9 +28,9 @@
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="Continue Shopping"
+              android:text="@string/text_contiue_shopping"
               android:id="@+id/TVcontinueShopipng"
-              android:textSize="18sp"
+              android:textSize="@dimen/text_size_18"
               android:textColor="@color/colorBlue"
               android:layout_centerVertical="true"
               android:layout_alignParentStart="true" />
@@ -40,9 +40,9 @@
               android:textAllCaps="false"
               android:id="@+id/idButtonProceed"
              android:layout_alignParentEnd="true"
-              android:textColor="#ffffff"
+              android:textColor="@color/colorWhite"
               android:background="@color/colorBlue"
-              android:text="Proceed to complete order"/>
+              android:text="@string/btn_proceed_from_cart"/>
 
       </RelativeLayout>
         </LinearLayout>

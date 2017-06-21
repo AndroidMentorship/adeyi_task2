@@ -19,9 +19,12 @@ public class FoodDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_detail);
         ButterKnife.bind(this);
+
         Intent intent = getIntent();
         if (intent != null) {
             foodDescTV.setText(intent.getStringExtra("FOODDESC"));
+            getSupportActionBar().setTitle(intent.getStringExtra("FOODNAME"));
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
             foodPriceTV.setText("N: "+ String.valueOf(intent.getIntExtra("FOODPRICE",4)));
             foodNameTV.setText(intent.getStringExtra("FOODNAME"));

@@ -19,20 +19,19 @@
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_marginTop="5dp"
+      android:layout_marginTop="@dimen/side_margin5"
       android:orientation="horizontal">
       <TextView
-          android:layout_width="80dp"
+          android:layout_width="@dimen/text_view_width80"
           android:layout_height="wrap_content"
           android:textColor="@color/colorBlue"
-          android:text="Total Bill:"/>
+          android:text="@string/totalBill"/>
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="price"
       android:id="@+id/idTVbillPrice"
       android:textColor="@color/colorBlack"
-      android:layout_marginLeft="5dp"/>
+      android:layout_marginLeft="@dimen/side_margin5"/>
   </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,18 +40,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:paddingTop="@dimen/side_margin10"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="35dp"
+                    android:layout_width="@dimen/text_view_width80"
+                    android:layout_height="@dimen/text_height35"
                     android:textColor="@color/colorBlue"
-                    android:text="Delivery Address"
+                    android:text="@string/delivery_Address"
                     />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="address"
                     android:textColor="@color/colorBlack"
                     android:id="@+id/idTVdeliveryAddress"
 
@@ -61,18 +59,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:paddingTop="@dimen/side_margin10"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="35dp"
+                    android:layout_width="@dimen/text_view_width80"
+                    android:layout_height="@dimen/text_height35"
                     android:textColor="@color/colorBlue"
-                    android:text="Nearest Bus stop"
+                    android:text="@string/nearest_bus_stop"
                     />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="address"
                     android:textColor="@color/colorBlack"
                     android:id="@+id/idTVBusStop"
 
@@ -83,18 +80,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:paddingTop="@dimen/side_margin10"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="35dp"
-                    android:text="Phone Number"
+                    android:layout_width="@dimen/text_view_width80"
+                    android:layout_height="@dimen/text_height35"
+                    android:text="@string/phone_number"
                     android:textColor="@color/colorBlue"
                     />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="address"
                     android:textColor="@color/colorBlack"
                     android:id="@+id/idTVphoneNum"
 
@@ -104,18 +100,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:paddingTop="@dimen/side_margin10"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="35dp"
-                    android:text="Full name"
+                    android:layout_width="@dimen/text_view_width80"
+                    android:layout_height="@dimen/text_height35"
+                    android:text="@string/full_name"
                         android:textColor="@color/colorBlue"
                     />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="address"
                     android:textColor="@color/colorBlack"
                     android:id="@+id/idTVfullName"
 
@@ -125,18 +120,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:paddingTop="@dimen/side_margin10"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="35dp"
-                    android:text="Email"
+                    android:layout_width="@dimen/text_view_width80"
+                    android:layout_height="@dimen/text_height35"
+                    android:text="@string/email_address"
                     android:textColor="@color/colorBlue"
                     />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="address"
                     android:textColor="@color/colorBlack"
                     android:id="@+id/idTVemail"
 

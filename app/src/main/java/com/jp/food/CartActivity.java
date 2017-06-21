@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -27,11 +28,14 @@ public class CartActivity extends AppCompatActivity implements FoodAdapter.ItemC
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
         ButterKnife.bind(this);
+        getSupportActionBar().setTitle(getString(R.string.cart_Title));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         cartArrayList = Food.getFoodCartList();
         linearLayoutManager = new LinearLayoutManager(this);
         foodCartAdapter = new FoodCartAdapter(getApplicationContext(), cartArrayList);

@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements FoodAdapter.ItemC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        getSupportActionBar().setTitle(getString(R.string.main_activity_title));
         foodArrayList = Food.getFoodList();
         linearLayoutManager = new LinearLayoutManager(this);
         foodAdapter = new FoodAdapter(this, foodArrayList,this);

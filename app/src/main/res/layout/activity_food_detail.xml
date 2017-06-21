@@ -9,40 +9,38 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="@dimen/imageHeight250"
         android:src="@drawable/amala_image"
         android:id="@+id/idImageFood"
-        android:paddingTop="30dp"/>
+        android:paddingTop="@dimen/thirty_paddingTop"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/side_margin10"
+        android:layout_marginLeft="@dimen/side_margin10"
         android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="filled item name "
             android:gravity="center"
             android:textStyle="bold"
             android:textColor="#000000"
             android:id="@+id/idTextViewFoodName"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="@dimen/side_margin5"/>
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/side_margin10"
+        android:layout_marginLeft="@dimen/side_margin10"
         android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/idTextViewFoodDescription"
-            android:text="Filled item description"
-            android:textSize="18sp"
+            android:textSize="@dimen/text_size_18"
             />
     </RelativeLayout>
 
@@ -54,16 +52,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Price:"
+            android:text="@string/price_text"
             android:textColor="@color/colorPrimary"
             android:id="@+id/idTVItemPr"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Filled item price"
             android:layout_toRightOf="@+id/idTVItemPr"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="@dimen/side_margin5"
             android:textColor="@color/colorPrimary"
             android:id="@+id/idTVfoodPrice"/>
     </RelativeLayout>
@@ -74,8 +71,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:background="@color/colorBlue"
-        android:textColor="#ffffff"
+        android:textColor="@color/colorWhite"
         android:textAllCaps="false"
-        android:text="add to cart" />
+        android:text="@string/btn_text_add_to_cart" />
 
 </LinearLayout>

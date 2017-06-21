@@ -6,114 +6,114 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
+        android:layout_marginLeft="@dimen/side_margin5"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="@dimen/side_margin10">
             <TextView
-                android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/text_view_width80"
+                android:layout_height="@dimen/text_height_50"
                 android:gravity="fill"
-                android:textColor="#000000"
-                android:text="Full Name"
-                android:textSize="18sp"/>
+                android:textColor="@color/colorBlack"
+                android:text="@string/full_name"
+                android:textSize="@dimen/text_size_18"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/idETfullname"
-                android:hint="Enter your fullname here "/>
+                android:hint="@string/hint_fullname"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/side_margin10"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="80dp"
-                android:textColor="#000000"
-                android:layout_height="50dp"
-                android:text="Email address"
-                android:textSize="18sp"
+                android:layout_width="@dimen/text_view_width80"
+                android:textColor="@color/colorBlack"
+                android:layout_height="@dimen/text_height_50"
+                android:text="@string/email_address"
+                android:textSize="@dimen/text_size_18"
                 />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/idETemail"
-                android:hint="Enter your emal here "/>
+                android:hint="@string/hint_email"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/side_margin10"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="80dp"
-                android:textColor="#000000"
-                android:layout_height="wrap_content"
-                android:text="Address"
-                android:textSize="18sp"/>
+                android:layout_width="@dimen/text_view_width80"
+                android:textColor="@color/colorBlack"
+                android:layout_height="@dimen/text_height_50"
+                android:text="@string/delivery_Address"
+                android:textSize="@dimen/text_size_18"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/idETaddress"
-                android:hint="enter your address here"/>
+                android:hint="@string/hint_delivery_address"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/side_margin10"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="80dp"
-                android:layout_height="50dp"
-                android:textColor="#000000"
-                android:text="Nearest Bus Stop"
-                android:textSize="18sp"
+                android:layout_width="@dimen/text_view_width80"
+                android:layout_height="@dimen/text_height_50"
+                android:textColor="@color/colorBlack"
+                android:text="@string/nearest_bus_stop"
+                android:textSize="@dimen/text_size_18"
                 />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nearest bustop"
+                android:hint="@string/hint_nearest_bustop"
                 android:id="@+id/idETBusstop"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="@dimen/side_margin10">
             <TextView
-                android:layout_width="80dp"
-                android:textColor="#000000"
-                android:layout_height="50dp"
-                android:textSize="18sp"
-                android:text="Phone number "/>
+                android:layout_width="@dimen/text_view_width80"
+                android:textColor="@color/colorBlack"
+                android:layout_height="@dimen/text_height_50"
+                android:textSize="@dimen/text_size_18"
+                android:text="@string/phone_number"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/idETphone"
-                android:hint="Enter phone here "/>
+                android:hint="@string/hint_phoneNumber"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="@dimen/side_margin10">
             <TextView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:text="Coupon Code (optional)"/>
+                android:layout_width="@dimen/text_view_width80"
+                android:layout_height="@dimen/text_view_width80"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_18"
+                android:text="@string/text_coupon_code"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/idETCoupon"
-                android:hint="Enter code here"/>
+                android:hint="@string/hint_coupon"/>
         </LinearLayout>
 <Button
     android:layout_width="match_parent"

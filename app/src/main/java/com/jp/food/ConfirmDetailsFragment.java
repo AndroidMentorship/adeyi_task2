@@ -58,6 +58,7 @@ public class ConfirmDetailsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_confirm_details, container, false);
         ButterKnife.bind(this, view);
+        getActivity().setTitle(getString(R.string.confirm_detail_frag_title));
         String fullName = getArguments().getString("FULLNAME", "fullname");
         String email = getArguments().getString("EMAIL","email");
         String phoneNum = getArguments().getString("PHONE", "phone");

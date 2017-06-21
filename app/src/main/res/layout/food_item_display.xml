@@ -15,9 +15,8 @@
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="@dimen/imageRecyclerSize200"
                 android:layout_weight="1"
-                android:src="@drawable/amala_image"
                 android:layout_gravity="bottom"
                 android:id="@+id/idFoodImageView"
                 />
@@ -25,7 +24,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="@dimen/side_margin5"
                 android:layout_weight="1">
 
                 <TextView
@@ -33,9 +32,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="fill_horizontal"
-                    android:text="Amala"
                     android:textStyle="bold"
-                    android:layout_marginBottom="28dp"
+                    android:layout_marginBottom="@dimen/TwentyEight"
                     android:layout_above="@+id/idButtonAddToCart"
                     android:layout_centerHorizontal="true" />
 
@@ -43,12 +41,9 @@
                     android:id="@+id/idTextViewPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-
-                    android:text="@string/pricePlaceholder"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginBottom="73dp" />
+                    android:layout_marginBottom="@dimen/seventyThree" />
 
                 <Button
                     android:id="@+id/idButtonAddToCart"
@@ -56,12 +51,12 @@
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@+id/idTextViewPrice"
                     android:layout_alignBottom="@+id/idTextViewPrice"
-                    android:layout_marginLeft="2dp"
+                    android:layout_marginLeft="@dimen/side_margin2"
                     android:layout_toEndOf="@+id/idTextViewPrice"
                     android:background="@color/colorBlue"
-                    android:text="Add to cart"
+                    android:text="@string/btn_text_add_to_cart"
                     android:textAllCaps="false"
-                    android:textColor="#ffffff" />
+                    android:textColor="@color/colorWhite" />
             </RelativeLayout>
 
 
