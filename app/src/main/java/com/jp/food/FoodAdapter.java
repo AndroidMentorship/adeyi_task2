@@ -47,7 +47,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
             @Override
             public void onClick(View v) {
                 food.addToCart(food);
-                Toast.makeText(context, food.getFoodName().toString() + "added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, food.getFoodName().toString() + "  added", Toast.LENGTH_SHORT).show();
             }
         });
 

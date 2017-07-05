@@ -20,7 +20,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="btn_proceed_from_cart">Proceed to complete order</string>
-    <string name="text_contiue_shopping">Continue Shopping</string>
+    <string name="text_contiue_shopping"><u>Continue Shopping</u></string>
     <string name="btn_text_add_to_cart">add to cart</string>
     <string name="price_text">Price:</string>
     <string name="totalBill">Total Bill:</string>
@@ -40,4 +40,6 @@
     <string name="confirm_detail_frag_title">Confirm Details</string>
     <string name="enter_details_frag_title">Enter shipping details</string>
     <string name="main_activity_title">O\'s Kitchen</string>
+    <string name="here_login"><u>Click HERE</u></string>
+    <string name="login_text">Login</string>
 </resources>

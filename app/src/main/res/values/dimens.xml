@@ -15,4 +15,5 @@
     <dimen name="text_height35">35dp</dimen>
     <dimen name="text_height_50">50dp</dimen>
     <dimen name="sixty">60dp</dimen>
+    <dimen name="sixteen16">16dp</dimen>
 </resources>

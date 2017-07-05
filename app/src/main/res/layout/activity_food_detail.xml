@@ -7,12 +7,19 @@
     android:orientation="vertical"
     tools:context="com.jp.food.FoodDetailActivity">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/imageHeight250"
         android:src="@drawable/amala_image"
         android:id="@+id/idImageFood"
         android:paddingTop="@dimen/thirty_paddingTop"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="2"
+        android:progressTint="@color/colorPrimary"/>
+
 
     <RelativeLayout
         android:layout_width="match_parent"

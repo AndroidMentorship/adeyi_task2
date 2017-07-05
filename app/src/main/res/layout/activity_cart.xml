@@ -46,4 +46,27 @@
 
       </RelativeLayout>
         </LinearLayout>
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/TwentyEight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have a coupon code?     "
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/idhavetext"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/idhavetext"
+            android:text="@string/here_login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_18"
+            android:id="@+id/texthere"/>
+
+
+    </RelativeLayout>
+    </LinearLayout>
