@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/main_activity_title"
         android:textSize="50sp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:textColor="@color/colorPrimary"
         android:gravity="center_horizontal"/>
 
@@ -23,66 +23,96 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Firstname">
+            android:hint="Full Name"
+            android:id="@+id/idLayoutNameET"
+            >
+
             <android.support.design.widget.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/idRegNameET"/>
 
         </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Lastname"
+        android:hint="Email"
+        android:id="@+id/idLayoutEmailET"
         >
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/idRegEmailET"
+            android:inputType="textEmailAddress"/>
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="firstname">
+        android:hint="@string/phone_number"
+        android:id="@+id/idLayoutPhoneET">
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:id="@+id/idRegPhoneET"/>
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="firstname">
+        android:hint="Address"
+        android:id="@+id/idLayoutAddressET">
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:id="@+id/idRegAddressET"/>
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="firstname">
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/idLayoutPassword">
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/idRegPasswordET"/>
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="firstname">
+        app:passwordToggleEnabled="true"
+        android:hint="Confirm Password"
+        android:id="@+id/idLayoutConfirmPassET">
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            android:id="@+id/idRegConfirmPassworET"/>
 
     </android.support.design.widget.TextInputLayout>
 
 
-
+<Button
+    android:layout_width="match_parent"
+    android:layout_height= "wrap_content"
+    android:background="@color/colorPrimary"
+    android:text="@string/Register"
+    android:id="@+id/idRegButton"
+    android:layout_marginTop="@dimen/side_margin10"
+    android:textColor="@color/colorWhite"/>
 
 
 </LinearLayout>

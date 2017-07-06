@@ -65,7 +65,7 @@
             android:text="@string/here_login"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/text_size_18"
-            android:id="@+id/texthere"/>
+            android:id="@+id/texthereLogin"/>
 
 
     </RelativeLayout>

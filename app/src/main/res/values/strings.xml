@@ -42,4 +42,12 @@
     <string name="main_activity_title">O\'s Kitchen</string>
     <string name="here_login"><u>Click HERE</u></string>
     <string name="login_text">Login</string>
+    <string name="Register">Register</string>
+    <string name="error_password_no_match">Password does not match</string>
+    <string name="registerTitle">Register</string>
+    <string name="registerCompleteMessage">Successfully Registered!, You can now Login</string>
+    <string name="email_key">email key</string>
+    <string name="password_key">password key</string>
+    <string name="login_title">Login</string>
+    <string name="pref_name">pref name</string>
 </resources>

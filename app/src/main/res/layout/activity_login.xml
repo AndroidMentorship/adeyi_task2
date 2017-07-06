@@ -23,12 +23,15 @@
 <android.support.design.widget.TextInputLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/idEmailLoginLayout"
     android:backgroundTint="@color/colorBlack"
     android:hint="Email Address">
 
     <android.support.design.widget.TextInputEditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/idLoginEmailET"
+        android:inputType="textEmailAddress"
         android:backgroundTint="@color/colorBlack"/>
 </android.support.design.widget.TextInputLayout>
 
@@ -37,12 +40,16 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password">
+        android:hint="Password"
+        android:id="@+id/idLoginPasswordLayout"
+        app:passwordToggleEnabled="true">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:backgroundTint="@color/colorBlack"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/idLoginPasswordET"/>
     </android.support.design.widget.TextInputLayout>
 
 <Button
@@ -54,6 +61,7 @@
     android:background="@color/colorPrimary"
     android:textAllCaps="false"
     android:textSize="24sp"
+    android:id="@+id/idBtnLogin"
     android:layout_gravity="center_horizontal"/>
 
 <RelativeLayout
@@ -72,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/idTextForgot"
         android:textSize="21sp"
+        android:id="@+id/idTextForgotPass"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
         android:text="CLICK HERE "/>
@@ -94,6 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/idTextReg"
             android:textSize="21sp"
+            android:id="@+id/idTextEnterReg"
             android:textColor="@color/colorBlack"
             android:textStyle="bold"
             android:text="Register"/>
