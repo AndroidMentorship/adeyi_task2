@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,66 +7,75 @@
     android:padding="16dp"
     android:orientation="vertical"
     tools:context="com.jp.food.CartActivity">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="350dp">
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/idRecyclerViewCart">
 
-        </android.support.v7.widget.RecyclerView>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
 
-    </ScrollView>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+       <android.support.v4.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <android.support.v7.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/idRecyclerViewCart">
 
-      <RelativeLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/text_contiue_shopping"
-              android:id="@+id/TVcontinueShopipng"
-              android:textSize="@dimen/text_size_18"
-              android:textColor="@color/colorBlue"
-              android:layout_centerVertical="true"
-              android:layout_alignParentStart="true" />
-          <Button
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:textAllCaps="false"
-              android:id="@+id/idButtonProceed"
-             android:layout_alignParentEnd="true"
-              android:textColor="@color/colorWhite"
-              android:background="@color/colorBlue"
-              android:text="@string/btn_proceed_from_cart"/>
+           </android.support.v7.widget.RecyclerView>
 
-      </RelativeLayout>
-        </LinearLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/TwentyEight">
+       </android.support.v4.widget.NestedScrollView>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Have a coupon code?     "
-            android:textSize="18sp"
-            android:textColor="@color/colorBlack"
-            android:id="@+id/idhavetext"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/idhavetext"
-            android:text="@string/here_login"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/text_size_18"
-            android:id="@+id/texthereLogin"/>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/text_contiue_shopping"
+                   android:id="@+id/TVcontinueShopipng"
+                   android:textSize="@dimen/text_size_18"
+                   android:textColor="@color/colorBlue"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentStart="true" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAllCaps="false"
+                   android:id="@+id/idButtonProceed"
+                   android:layout_alignParentEnd="true"
+                   android:textColor="@color/colorWhite"
+                   android:background="@color/colorBlue"
+                   android:text="@string/btn_proceed_from_cart"/>
+
+           </RelativeLayout>
+       </LinearLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/TwentyEight">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Have a coupon code?     "
+               android:textSize="18sp"
+               android:textColor="@color/colorBlack"
+               android:id="@+id/idhavetext"/>
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/idhavetext"
+               android:text="@string/here_login"
+               style="@style/Widget.AppCompat.Button.Borderless"
+               android:textColor="@color/colorPrimary"
+               android:textSize="@dimen/text_size_18"
+               android:id="@+id/texthereLogin"/>
 
 
-    </RelativeLayout>
-    </LinearLayout>
+       </RelativeLayout>
+
+   </LinearLayout>
+     </ScrollView>

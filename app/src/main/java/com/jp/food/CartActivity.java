@@ -22,7 +22,7 @@ public class CartActivity extends AppCompatActivity implements FoodAdapter.ItemC
     @BindView(R.id.idRecyclerViewCart) RecyclerView cartRecyclerView;
     @BindView(R.id.TVcontinueShopipng) TextView TVcontinueShop;
     @BindView(R.id.idButtonProceed) Button btnProceed;
-    @BindView(R.id.texthereLogin) TextView loginText;
+    @BindView(R.id.texthereLogin) Button loginText;
     private LinearLayoutManager  linearLayoutManager;
     private FoodCartAdapter foodCartAdapter;
     private ArrayList<Food> cartArrayList;
@@ -46,6 +46,7 @@ public class CartActivity extends AppCompatActivity implements FoodAdapter.ItemC
         cartRecyclerView.setHasFixedSize(true);
         btnProceed.setOnClickListener(this);
         TVcontinueShop.setOnClickListener(this);
+        loginText.setOnClickListener(this);
 
 
     }
@@ -59,8 +60,8 @@ public class CartActivity extends AppCompatActivity implements FoodAdapter.ItemC
     public void onClick(View v) {
         switch (v.getId()){
             case  R.id.idButtonProceed:
-               // startActivity(new Intent(getApplicationContext(),CompleteTransactionActivity.class));
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+               startActivity(new Intent(getApplicationContext(),CompleteTransactionActivity.class));
+               // startActivity(new Intent(getApplicationContext(), LoginActivity.class));
 
                 break;
             case R.id.TVcontinueShopipng:
@@ -69,7 +70,6 @@ public class CartActivity extends AppCompatActivity implements FoodAdapter.ItemC
 
             case R.id.texthereLogin:
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-
                 break;
             default:
                 break;

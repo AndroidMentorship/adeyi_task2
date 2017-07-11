@@ -13,7 +13,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
+public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.idLoginEmailET) TextInputEditText loginEmailET;
     @BindView(R.id.idLoginPasswordET) TextInputEditText loginPassET;
     @BindView(R.id.idBtnLogin) Button btnLogin;
@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         getSupportActionBar().setTitle(getString(R.string.login_title));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ButterKnife.bind(this);
         Intent intent = getIntent();
         sharedPreferences = getApplicationContext().getSharedPreferences(getString(R.string.pref_name),MODE_PRIVATE);
@@ -49,20 +50,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             });
 
         }
+       enterRegTV.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(getApplicationContext(),RegisterActivity.class));
+           }
+       });
+
+       forgotPassTV.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(getApplicationContext(), ForgotActivity.class));
+           }
+       });
 
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.idTextForgotPass:
-                startActivity(new Intent(getApplicationContext(), ForgotActivity.class));
-                break;
-            case R.id.idTextEnterReg:
-                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
-                break;
-
-
-        }
-    }
 }
